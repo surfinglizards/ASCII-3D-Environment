@@ -18,5 +18,5 @@ Javidx9 (OneLoneCoder)
 
 - original project in C++ (Github): https://github.com/OneLoneCoder/CommandLineFPS
 - video: https://youtu.be/xW8skO7MFYw
-- Website: https://www.onelonecoder.com
+- Website: https://community.onelonecoder.com/
 - Youtube Channel: https://www.youtube.com/javidx9
