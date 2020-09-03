@@ -2,37 +2,12 @@ package FX;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.Temporal;
-
 public class Main extends Application {
-    /**
-     * Disclaimer
-     *
-     *  I am not the creator of this code this is a port for Java, this is
-     *  inspired by javidx9's video "Code-It-Yourself!
-     *  First Person Shooter (Quick and Simple C++)."
-     *
-     *  credit
-     *
-     *  original project in C++ (Github): https://github.com/OneLoneCoder/CommandLineFPS
-     *  video: https://youtu.be/xW8skO7MFYw
-     *
-     *
-     *
-     *
-     */
 
     public static void main(String[] args) {
         launch(args);
@@ -53,6 +28,8 @@ public class Main extends Application {
     float depth = 16.0f;
     float speed = 5.0f;
 
+    double elapsedTime = 0.016; //AnimationTimer is capped at 60 fps
+    
     String map = "";
 
     char[] screen = new char[(int) (screenHeight * screenWidth)];
@@ -111,12 +88,9 @@ public class Main extends Application {
         };
         timer.start();
 
-
     }
-
-    double elapsedTime = 0.016; //AnimationTimer is capped at 60 fps
+    
     private void keyReg(KeyEvent event){
-
         switch (event.getCode()) {
             case A:
                 playerAngle -= (speed * 0.75f) * elapsedTime;
@@ -206,7 +180,6 @@ public class Main extends Application {
     }
 
     private String lineBreaker(String input) { //to display the screen in the right Ratio
-
         String result = "";
         for (int i = 0; i < input.length(); i+= 120) {
             result += input.substring(i, i + 120) + "\n";
