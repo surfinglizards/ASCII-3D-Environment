@@ -72,8 +72,6 @@ public class Main extends Application {
         map += "#..............#";
         map += "#..............#";
         map += "#..............#";
-        map += "#..............#";
-        map += "#..............#";
         map += "################";
 
          AnimationTimer timer = new AnimationTimer() {
