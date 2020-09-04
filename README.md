@@ -4,9 +4,6 @@ A "3D" environment inpsired from doom using nothing but ASCII. This was original
 The major differences between my version and the orginal is the one in Java use a label and doesn't have a while loop for the game loop. 
 The "game" runs off of an animation timer which caps the frame rate to 60.
 
-# Issues
-- Map doesn't fully render (renders half)
-
 ## Disclaimer
 I am not the creator of this code this is a port for Java, this is
 inspired by javidx9's Youtube video "Code-It-Yourself!
